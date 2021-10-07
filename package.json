@@ -1,6 +1,6 @@
 {
-  "name": "nextjs",
-  "version": "5.0.0",
+  "name": "stenson_website",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@emotion/cache": "^11.4.0",
@@ -19,5 +19,8 @@
     "build": "next build",
     "start": "next start",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  },
+  "devDependencies": {
+    "prettier": "2.4.1"
   }
 }
