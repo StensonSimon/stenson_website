@@ -1,9 +1,8 @@
 import * as React from 'react';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import Link from '../src/component/general/Link';
+import { Container, Typography, Button } from '@mui/material';
+import Link from '../../src/component/general/Link';
 
-export default function Index() {
+export default function ContactMe() {
   return (
     <Container maxWidth="sm">
         <Typography variant="h4" component="h1" gutterBottom>
@@ -12,9 +11,9 @@ export default function Index() {
         <Link href="/about" color="secondary">
           Go to the about page
         </Link><br />
-        <Link href="/contact/me" color="secondary">
-          Contact me
-        </Link>
+        <Button variant="contained" component={Link} noLinkStyle href="/">
+          Go to the main page
+        </Button>
     </Container>
   );
 }
